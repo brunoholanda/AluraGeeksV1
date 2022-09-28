@@ -1,0 +1,30 @@
+.tituloelink__botao {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--branco);
+    background: var(--azul);
+    border-style: none;
+    cursor: pointer;
+    transition: 0.4s all;
+    width: 100%;
+    height: 3em;
+    padding: 1em;
+}
+
+.starwars__produtos {
+    padding: 0.5em;
+}
+
+.tituloelink__botao:hover {
+    background: darkorange;
+	transform: scale(1.02);
+}
+
+@media screen and (max-width: 768px) {
+    .starwars__card:nth-child(n+5):nth-child(-n+6) {
+        display: none;
+       
+    }
+    
+}
+

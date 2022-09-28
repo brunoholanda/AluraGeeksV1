@@ -1,0 +1,89 @@
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background-color: var(--branco);
+}
+
+.cabecalho__logo {
+    padding-right: 2em;
+}
+
+.cabecalho__pesquisa {
+    border-radius: 20px;
+    background-color: var(--cinza-pesquisa);
+    border-style: none;
+    width: 25%;
+    margin-right: 20em;
+}
+
+.cabecalho__pesquisa::placeholder {
+    font-family: var(--fonte-principal);
+    font-size: 14px; 
+    font-weight: 400;
+    color: var(--cinza);
+    background: url("../img/Lupa.svg") no-repeat;
+    background-position: right center;
+    padding-left: 2em;
+}
+
+.cabecalho__botao {
+    border-color: var(--azul);
+    color: var(--azul);
+    background-color: var(--branco);
+    font-family: var(--fonte-principal);
+    padding: 0.8em;
+    width: 9em;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+.cabecalho__botao:hover {
+    background: var(--azul);
+	transform: scale(1.02);
+    color: var(--branco);
+}
+
+@media screen and (max-width: 768px) {
+    .cabecalho {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .cabecalho__logo {
+        margin-left: 1.5em;
+    }
+
+    .cabecalho__pesquisa {
+        width: 35%;
+        margin-right: 6.5em;
+    }
+
+    .cabecalho__botao {
+        margin-right: 1.5em;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+    .cabecalho {
+       display: flex;
+       flex-direction: row;
+    }
+
+    .cabecalho__logo {
+        margin-left: 1em;
+        width: 30%;
+    }
+
+    .cabecalho__pesquisa {
+       display: none;
+    }
+
+    .cabecalho__botao {
+        margin-right: 1em;
+        padding-right: 1em;
+        width: 100%;
+    }
+}

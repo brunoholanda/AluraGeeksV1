@@ -1,0 +1,105 @@
+.starwars__titulo {
+    color: var(--texto-principal);
+    font-weight: 700;
+    font-size: 32px;
+      
+}
+
+.tituloelink {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 9em;
+    margin-right: 9em;
+    margin-top: 2em;
+   
+}
+
+.vertudo {
+    color: var(--azul);
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 0.8em;
+}
+
+.vertudo::after {
+    content: url('../img/seta.svg');
+    margin-left: 1em;
+}
+
+.vertudo:hover {
+    text-decoration: underline;
+}
+
+
+.starwars {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1em;
+}
+
+.starwars__card {
+    padding: 0.5em;
+}
+
+.starwars__card-produto {
+    color: var(--texto-principal);
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 0.5em;
+}
+
+.starwars__card-preco {
+    color: var(--texto-principal);
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 0.5em;
+}
+
+.starwars__link {
+    color: var(--azul);
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 0.8em;
+}
+
+.starwars__link:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    .tituloelink {
+        margin-left: 1.5em;
+        margin-right: 2em;
+        margin-top: 2em;
+       
+    }
+
+    .starwars {
+        padding: 0.5em;
+    }
+
+    .starwars__card:nth-child(n+5):nth-child(-n+6) {
+        display: none;
+    }
+    
+    .starwars__card {
+        padding: 0.2em;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .tituloelink {
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
+
+    .starwars {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}

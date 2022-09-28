@@ -1,0 +1,25 @@
+@import url(../css/cabecalho.css);
+@import url(../css/banner.css);
+@import url(../css/produtos.css);
+@import url(../css/contato.css);
+@import url(../css/rodape.css);
+@import url(../css/login.css);
+@import url(../css/todosprodutos.css);
+@import url(../css/produtos/produto01.css);
+
+:root {
+    --branco: #ffffff;
+    --cor-de-fundo: #E5E5E5;
+    --cor-contato: #EAF2FD;
+    --cinza: #A2A2A2;
+    --cinza-pesquisa: #F5F5F5;
+    --azul: #2A7AE4;
+    --texto-principal: #464646;
+    --fonte-principal: 'Raleway', sans-serif;
+}
+
+body {
+    font-family: var(--fonte-principal);
+    background-color: var(--cor-de-fundo);
+}
+

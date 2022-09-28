@@ -1,0 +1,146 @@
+.contato {
+    background-color: var(--cor-contato);
+    display: flex;
+    justify-content: center;
+    
+}
+
+.contato__logo {
+    margin: 2.5em 0 0 0;
+}
+
+.contato__logo-imagem {
+    display: flex;
+    
+}
+
+.contato__links {
+    margin: 2em 5em 2em 5em;
+}
+
+.contato__links-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    padding-top: 1.5em;
+    color: var(--texto-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.contato__links-link:hover {
+    text-decoration: underline;
+}
+
+.contato__formulario {
+    display: flex;
+    margin-top: 2em;
+    flex-direction: column;
+    
+}
+
+.contato__titulo {
+    color: var(--texto-principal);
+    font-weight: 700;
+
+}
+
+.contato__formulario-input {
+    margin-top: 1em;
+    border-radius: 4px;
+    border-style: none;
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    color: var(--cinza);
+    box-shadow:  2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.contato__formulario-nome {
+    padding: 1em;
+    font-size: 12px;
+}
+
+.contato__formulario-mensagem {
+    padding: 0.5em;
+    font-size: 16px;
+    color: var(--cinza);
+}
+
+.enviar {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--branco);
+    text-align: center;
+    justify-content: center;
+    background: var(--azul);
+    padding: 1em;
+    width: 35%;
+    margin-top: 1em;
+    margin-bottom: 3em;
+    border-style: none;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+.enviar:hover {
+	background: darkorange;
+	transform: scale(1.02);
+}
+
+
+@media screen and (max-width: 768px) {
+    .contato {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+    }
+    .contato__logo {
+       display: none;
+    }
+
+    .contato__links {
+        
+        margin: 2em 1em 2em 1.5em;
+    }
+    
+
+    .contato__formulario-input {
+        width: 90%;
+        margin-right: 2em;
+    }
+
+    .enviar {
+        text-align: center;
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .contato {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .contato__logo {
+        display: block;
+    }
+
+    .contato__links {
+        text-align: center;
+    }
+    
+
+    .contato__formulario-input {
+        width: 90%;
+        margin-right: 2em;
+    }
+
+    .enviar {
+        text-align: center;
+        width: 45%;
+    }
+}

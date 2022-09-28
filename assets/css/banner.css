@@ -1,0 +1,101 @@
+.banner {
+    position: relative;
+    display: flex;
+   
+}
+
+.banner__imagem {
+    background: url('/assets/img/banner.png') no-repeat center / cover;
+    width: 100%;
+    height: calc(60vh - 51px);  
+}
+
+.banner__titulo {
+    font-weight: 700;
+    font-size: 52px;
+    color: var(--branco);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-align: left;
+    transform: translate(-100%, -45%);
+}
+
+.banner__descricao {
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--branco);
+    position: absolute;
+    left: 43%;
+    top: 67%;
+    text-align: left;
+    transform: translate(-100%, -45%);
+}
+
+.banner__botao {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--branco);
+    background: var(--azul);
+    padding: 1em;
+    position: absolute;
+    left: 20.5%;
+    top: 82%;
+    text-align: left;
+    transform: translate(-100%, -45%);
+    border-style: none;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+
+.banner__botao:hover {
+	background: darkorange;
+	
+}
+
+@media screen and (max-width: 768px) {
+    .banner__imagem {
+        height: calc(35vh - 51px);  
+    }
+
+    .banner__titulo {
+        left: 0%;
+        top: 40%;
+        text-align: center;
+        transform: none;
+        margin-left: 0.5em;
+    }
+
+    .banner__descricao {
+        left: 0%;
+        top: 60%;
+        text-align: center;
+        transform: none;
+        margin-left: 1.2em;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .banner__imagem {
+        height: calc(25vh - 51px);  
+    }
+
+    .banner__titulo {
+        font-size: 22px;
+        
+    }
+
+    .banner__descricao {
+        font-size: 14px;
+        left: 0%;
+        top: 60%;
+        text-align: center;
+        transform: none;
+        margin-left: 1.2em;
+    }
+
+    .banner__botao {
+       left: 40.5%;
+    }
+}
